@@ -8,13 +8,13 @@
 </head>
 <body>
     <div id="app">
-        <p v-if="myMarks >= passMarks">
+        <p v-show="myMarks >= passMarks">
             Passed
         </p>
-        <p v-else-if="avgMarks >= passMarks">
+        <p v-show="avgMarks >= passMarks">
             You Passed Overall
         </p>
-        <p v-else>
+        <p v-show="myMarks < passMarks && avgMarks < passMarks">
             You Failed
         </p>
 
