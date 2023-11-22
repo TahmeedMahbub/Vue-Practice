@@ -8,9 +8,18 @@
 </head>
 <body>
     <div id="app">
-        <img v-bind:src="src" v-bind:alt="alt" v-bind:height="ht" v-bind:width="wt">
-        <p v-text="myText"></p>
-        <p v-html="myHtml"></p>
+        <p v-if="myMarks >= passMarks">
+            Passed
+        </p>
+        <p v-else-if="avgMarks >= passMarks">
+            You Passed Overall
+        </p>
+        <p v-else>
+            You Failed
+        </p>
+
+
+        
     </div>
 
     <script src="app.js"></script>
