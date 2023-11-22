@@ -8,8 +8,16 @@
 </head>
 <body>
     <div id="app">
-        <p v-for="arr in arr_ay">
+        <p v-for="(arr) in arr_ay">
             {{ arr }}
+        </p>
+        =======================
+        <p v-for="(arr, index) in arr_ay">
+            {{ index }} = {{ arr }}
+        </p>
+        =======================
+        <p v-for="(arr, index, key) in arr_ay">
+            {{ key }} => {{ index }} = {{ arr }}
         </p>
 
 
