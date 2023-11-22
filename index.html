@@ -8,14 +8,8 @@
 </head>
 <body>
     <div id="app">
-        <p v-show="myMarks >= passMarks">
-            Passed
-        </p>
-        <p v-show="avgMarks >= passMarks">
-            You Passed Overall
-        </p>
-        <p v-show="myMarks < passMarks && avgMarks < passMarks">
-            You Failed
+        <p v-for="arr in arr_ay">
+            {{ arr }}
         </p>
 
 

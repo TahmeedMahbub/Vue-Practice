@@ -1,8 +1,6 @@
 new Vue({
     el: "#app",
     data: {
-        passMarks: 50,
-        myMarks : 80,
-        avgMarks: 70
+        arr_ay : [10, 20, 30 ,40 ,50]
     }
 });
